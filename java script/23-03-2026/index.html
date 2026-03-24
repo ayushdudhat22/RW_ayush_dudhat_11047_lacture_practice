@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: rgb(195, 195, 195);
+            background-color: offwhite;
+            text-align: center;
+        }
+        .h1-tag{
+            color: black;
+        }
+        .student_form{
+            background-color: rgb(61, 98, 91);
+            padding: 20px;
+        }
+        .input_form{
+            margin-bottom: 20px;
+        }
+        .form_btn{
+            border:none;
+            padding: 10px 30px;
+        }
+        input{
+            padding: 10px;
+        }
+        #nameError , #emailError , #ageError , #passwordError , #fullnameError{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1 class="h1-tag">Student Registration Form</h1>
+        <form class="student_form" onsubmit="return validateForm()">
+            <div class="input_form">
+                <label for="">Name:</label>
+                <input type="text" id="name">
+                <div id="nameError"></div>
+            </div>
+            <div class="input_form">
+                <label for="">Full Name:</label>
+                <input type="text" name="" id="fullname">
+                <div id="fullnameError"></div>
+            </div>
+            <div class="input_form">
+                <label for="">Email:</label>
+                <input type="email" name="" id="email">
+                <div id="emailError"></div>
+            </div>
+            <div class="input_form">
+                <label for="">Password:</label>
+                <input type="password" name="" id="password">
+                <div id="passwordError"></div>
+            </div>
+            <div class="input_form">
+                <label for="">Age:</label>
+                <input type="number" name="" id="age">
+                <div id="ageError"></div>
+            </div>
+            <div class="input_form">
+                <button type="submit" class="form_btn">submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
