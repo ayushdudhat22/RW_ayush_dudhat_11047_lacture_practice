@@ -1,6 +1,3 @@
-/* Quiz App */
-/* Questions and Options / Answers Array */
-
 const Questions = [
     {
         question: "Which keyword is used to describe a varibale in javascript.",
@@ -30,8 +27,6 @@ const Questions = [
 
 ]
 
-/* static variables */
-
 let timeRemaining = 300;
 let currentQuestion = 0;
 let startTime = Date.now();
@@ -41,8 +36,6 @@ let timeInterval;
 
 console.log(score);
 console.log("startTime", startTime);
-
-/* Dom Elements */
 
 const quizBody = document.getElementById("quizBody")
 const questionCounter = document.getElementById("questionCounter")
@@ -65,8 +58,6 @@ const initQuizApp = () => {
 
     startTimer()
 }
-
-// timer
 
 const startTimer = () => {
     clearInterval(timeInterval)
