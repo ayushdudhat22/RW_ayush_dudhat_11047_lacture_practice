@@ -1,0 +1,35 @@
+body {
+    background: #f4f6f9;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    color: #777;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+.text-danger {
+
+    color: black;
+}
+.btn-next {
+    float: right;
+    padding: 10px 30px;
+    border-radius: 8px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Form Design</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+
+        <h2 class="text-center mb-3">Bootstrap Form Design</h2>
+        <p class="text-center text-muted">
+            Bootstrap theme now available in Jotform, feel free to use all form fields.
+        </p>
+
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label>Name:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label>E-mail Address:</label>
+                    <input type="email" class="form-control" placeholder="ex: myname@example.com">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">  
+                    <label>Country:</label>
+                    <select class="form-select">
+                        <option>Please Select</option>
+                        <option>India</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Phone Number:</label>
+                    <input type="text" class="form-control" placeholder="(000) 000-0000">
+                    <small class="text-danger">Please enter a valid phone number.</small>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label>Feedback Quality:</label><br>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="quality"> Bad
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="quality"> Good
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="quality"> Best
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="quality"> Excellent
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Areas to Select:</label><br>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input"> Support
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input"> Development
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input"> Administration
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input"> Directorate
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>Upload Picture:</label>
+                <div class="upload-box">
+                    <p>⬆ Upload a picture</p>
+                    <small>Drag and drop files here</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>My Message:</label>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-next">Next</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
