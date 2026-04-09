@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Main Card */
+.container {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Left Side */
+
+.left {
+    width: 50%;
+    background: url('./img/sign-up-photo.jfif') left center/cover;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.left h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Right Side */
+.right {
+    width: 50%;
+    padding: 40px;
+}
+
+.right h2 {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-btn {
+    margin-top: 10px;
+    background: #f1f1f1;
+    color: black;
+}
+
+.or {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left -->
+    <div class="left">
+        <h1>Create your Account</h1>
+        <p>Share your artwork and Get projects!</p>
+    </div>
+
+    <!-- Right -->
+    <div class="right">
+             <form>
+             <h2>Sign Up</h2>
+             
+             <div class="input-box">
+                 <input type="text" placeholder="First name">
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Last name">
+                </div>
+                
+                <div class="input-box">
+                    <input type="email" placeholder="Email address">
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" placeholder="Password">
+                </div>
+                
+                <div class="checkbox">
+                    <input type="checkbox"> Accept Terms & Conditions
+                </div>
+                
+                <button>Join us →</button>
+                
+                <div class="or">or</div>
+                
+                <button class="social-btn">Sign up with Google</button>
+                <button class="social-btn">Sign up with Apple</button>
+                
+            </div>   
+        </form>
+</div>
+
+</body>
+</html>
