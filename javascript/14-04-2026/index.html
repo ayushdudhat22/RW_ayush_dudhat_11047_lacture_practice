@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student CRUD</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-6">
+
+<h1 class="text-2xl font-bold mb-4">Student CRUD</h1>
+
+<button onclick="openAddModal()" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">
+Add Student
+</button>
+
+<!-- TABLE -->
+<table class="w-full border">
+<thead class="bg-gray-200">
+<tr>
+<th>Name</th>
+<th>GRID</th>
+<th>Course</th>
+<th>Fees</th>
+<th>Age</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="student_data"></tbody>
+</table>
+
+<!-- ADD MODAL -->
+<div id="crud-modal" class="hidden fixed top-0 left-0 right-0 bg-white p-4 border">
+<form id="addForm">
+<input id="name" placeholder="Name" class="border p-2 m-1"><br>
+<input id="grid" placeholder="Grid" class="border p-2 m-1"><br>
+<select id="course" class="border p-2 m-1">
+<option>HTML</option>
+<option>CSS</option>
+<option>JS</option>
+</select><br>
+<input id="fees" placeholder="Fees" class="border p-2 m-1"><br>
+<input id="age" placeholder="Age" class="border p-2 m-1"><br>
+<input id="email" placeholder="Email" class="border p-2 m-1"><br>
+
+<button type="submit" class="bg-green-500 text-white px-4 py-2">Add</button>
+<button type="button" onclick="closeAddModal()">Cancel</button>
+</form>
+</div>
+
+<!-- EDIT MODAL -->
+<div id="crud-modal1" class="hidden fixed top-0 left-0 right-0 bg-white p-4 border">
+<form id="editForm">
+<input id="edit_name" class="border p-2 m-1"><br>
+<input id="edit_grid" class="border p-2 m-1"><br>
+<select id="edit_course" class="border p-2 m-1">
+<option>HTML</option>
+<option>CSS</option>
+<option>JS</option>
+</select><br>
+<input id="edit_fees" class="border p-2 m-1"><br>
+<input id="edit_age" class="border p-2 m-1"><br>
+<input id="edit_email" class="border p-2 m-1"><br>
+
+<button type="submit" class="bg-yellow-500 text-white px-4 py-2">Update</button>
+<button type="button" onclick="closeEditModal()">Cancel</button>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
