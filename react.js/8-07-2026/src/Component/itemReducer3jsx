@@ -1,0 +1,80 @@
+import React from "react";
+import { useReducer } from "react";
+
+
+
+const ItemReducer3 = () => {
+
+    const intialstate = [{ count: 10, count2: 20 }];
+
+    const Reducer = (state, action) => {
+
+        switch (action.type) {
+
+            case 'INCREMENT1':
+                return [{ ...state[0], count: state[0].count + 1 }];
+
+            case 'DECREMENT1':
+                return[ {
+                    ...state[0],
+                    count: state[0].count > 0 ? state[0].count - 1 : 0,
+                }]
+            
+
+            case "INCREMENT2":
+                return [{ ...state[0], count2: state[0].count2 + 1 }]
+
+            case "DECREMENT2":
+                return[ {
+                    ...state[0],
+                    count2: state[0].count2 > 0 ? state[0].count2 - 1 : 0,
+                }]
+
+
+
+            case 'RESET':
+                return intialstate;
+
+            default:
+                return state;
+
+
+        }
+
+    }
+
+    const [state, dispatch] = useReducer(Reducer, intialstate)
+
+    return (
+        <div>
+
+            <div>
+                UseReducer Hook in React
+            </div>
+
+            <div>
+                Counter1: {state[0].count}
+
+                <button onClick={() => dispatch({ type: "INCREMENT1" })}>INCREMENT</button>
+                <button onClick={() => dispatch({ type: "DECREMENT1" })}>DECREMENT</button>
+            </div>
+
+
+
+            <div>
+                Counter2: {state[0].count2}
+
+                <button onClick={() => dispatch({ type: "INCREMENT2" })}>INCREMENT</button>
+                <button onClick={() => dispatch({ type: "DECREMENT2" })}>DECREMENT</button>
+            </div>
+
+            <button onClick={() => dispatch({ type: "RESET" })}>
+                RESET
+            </button>
+
+        </div>
+    )
+}
+
+
+export default ItemReducer3;
